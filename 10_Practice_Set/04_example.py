@@ -3,7 +3,7 @@
 class calculator:
     def __init__(self,n):
         self.n = n
-        # self.name = name
+        
     def square(self):
         print(f"{self.n} square is {self.n*self.n}")
     def cube(self):
