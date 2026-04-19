@@ -1,0 +1,634 @@
+Language --> Language is a simple way / mode of communication to communicate with each other.
+
+Program --> It is a set of instructions or set of rules to complete a task.
+
+Programming --> It is a process of writing those instructions so that computer can understand and do work as we want.
+
+Programming Language --> It is a special language which is used to talk with computers.
+
+> A programming language is a special language which we used to give instructions to the computer , so that it can understand  whatever we want. 
+
+> A programming language is a well structured and rule based  language which is designed to write instructions that a computer can understand , process and execute  to perform some specific task.
+
+
+			Python
+...................................................  
+
+> Python is a high level, interpreted language that is simple , powerful and widely used for many applications like web development, data science, automation etc.
+
+
+Features of Python
+.........................
+
+1. Easy to learn and analyze
+2. Dynamically Typed Language
+3. High - level language
+
+> Generally Programming Languages are classified into 3 types:
+(i) Low Level language
+(ii) Mid level language
+(iii) High level language
+
+(i) Low Level Language : It is a language which can be easily understand by computers , bot not easily understand by humans.
+
+e.g. Machine Language, Assembly Language , etc.
+
+(ii) Mid Level Language : It is a language  which hjas the features of both low level and high level language and it will act as a bridge between humans and computer.
+
+e.g. C, C++, etc.
+
+(iii) High Level Language : It is a language which can be easily understand by humans, but not by computers.
+
+e.g. Java, Python, JavaScript , etc....
+
+4. Interpreted Language : 
+
+Translator --> It is a special component or special program to convert high level language into binary language and binary language into high level language and vice - versa.
+
+> There are mainly two types of translators -->
+(i) Compiler
+(ii) Interpreter
+
+(i) Compiler --> It is a program that converts high level code to machine language in single run. 
+> If there is any error, it shows error and then checks for entire program.
+
+(ii) Interpreter --> It is a program that redas and run your code line by line and execute in a single run.
+> If there is any error, it will show error message and terminate execution.
+
+> Python uses Interpreter, that's why it is known as Interpreted Language.
+
+5. Multi Paradigm
+6. Huge number of library functions
+7. Platform Independent
+8. Free and Open Source
+
+
+
+
+
+Library Functions
+.........................................
+
+> These are the functions which we can use it, fetch it and access it, but can't change it's meaning.
+
+e.g. + --> addition
+     - --> subtraction
+     * --> multiplication 
+     / --> division
+
+> In Python, Library Functions are classified into 3 types :
+
+1. Keywords
+2. Operators
+3. Inbuilt Functions
+
+
+			Keywords
+..............................................
+
+> These are the universal standard words or reserved words , where the task and meaning of these words are already pre-defined by the developers, which user can't change or modify their meaning ; but can use them in our programs to find solutions.
+
+> Based on number of version, there are different different number of keywords present in each version.
+
+> In current version of Python, there are 35 keywords.
+
+> In order to fetch the list of all the keywords, we will be following the below synytax :
+
+import keyword
+keyword.kwlist
+
+> It will give the list of all 35 keywords.
+
+> In Python 3.9 version, there were 36 keywords, and that extra keyword was "__peg_parser__". But it was of no use, so in updated version of Python , it was removed.
+
+> If we want to check whether a particular word or string is a valid keyword or not, then we will use an inbuilt function i.e. "iskeyword()" function.
+
+Syntax :
+import keyword
+keyword.iskeyword('string/word')
+
+
+			Special Keywords
+.........................................................
+
+> These are the keywords which has some predefined meaning and fixed purpose.
+
+> In Python , there are 3 special keywords --> True, False and None.
+
+Ques. Why True, False and None are known as Special Keywords ?
+Ans: These are known as Special keywords, because :
+
+(i) These are starting from uppercase character.
+(ii) They can be stored as a value for a variable.
+(iii) These keywords are having their own internal meaning.
+
+True ---> 1
+False ---> 0
+None ---> Nothing
+
+> When special keywords are used in any expression, then their internal values will be taken :
+
+
+
+				Soft Keywords
+.......................................................................
+
+> These are the keywords which can be used as a variable for a value, or sometime we can use them as the name of a function, class or object.
+
+> Hence, they are not placed as normal keywords. In Python 3.10 version, there were four soft keywords and still 4 are there.
+
+> Syntax for printing the list of all soft keywords :
+
+import keyword
+keyword.softkwlist
+
+> If we want to check whether a particular word or string is a valid soft keyword or not, then we will use an inbuilt function i.e. "issoftkeyword()" function.
+
+Syntax :
+import keyword
+keyword.issoftkeyword('string/word')
+
+
+
+				Variables
+.........................................................
+
+> Variables are the named memory blocks which are used to store some value.
+
+Syntax : variable = value
+
+Steps of Memory Allocation :
+.................
+
+Step - 1: When the user assigns a value to a variablke,  the memory is divided conceptually into two parts :
+	
+	1. Variable Space (Stack)
+	2. Value Space (Heap)
+
+Step - 2: First, the value / objects  is stored in  the heap memory by allocating a memory block. Once the value is stored , Python internally creates a reference address for that memory location.
+
+Step - 3: The generated reference  address is stored  in the stack memory and is assigned to the respective variable name.
+
+So , the variable doesn't directly store the value; it store the reference to the value stored in heap space.
+
+Step - 4: When the user calls or accesses a variable, Python first searches for the variables in the stack memory.
+
+If variable is found, Python retrieves the reference address stored in it, then follows that reference to the heap memory to access the actual value.
+
+Step - 5: If the variable is not found in stack memory, Python will raise an error.
+
+This means, the variable is not created in the program.
+
+
+Reference Address : 
+> It is an address where value / variable are represented.
+> It is a hexadecimal number i.e. a 16 digit number. Hence, it will always written as "0x" (0x represents any random numbers).
+
+> To see the reference address, we will be using an inbuolt function i.e. id() function.
+
+id() function : It is an inbuilt function which is used to point the reference address of any variable or value.
+
+Syntax : id(variable / value)
+
+
+Overriding : Overriding means the situation where a new value replaces an existing value of same variable.
+
+> In simple words, when you assign a new value to something that already has a value, the old value is overridden (replaced).
+
+
+Multiple Variable Creation
+...............................
+
+> It is a process of creating and initializing 'n' number of variables along with their values in a single line.
+
+Syntax : 
+var_1, var_2, ....., var_n = value_1, value_2, ........., value_n
+
+where, value_1 will be stored in var_1
+       value_2 will be stored in var_2
+   	...............
+	...............
+       value_n will be stored in var_n
+
+
+> Here, number of variables must be equal to number of values.
+
+
+
+				Identifiers
+.........................................................
+
+> These are nothing but naming words which are designed  by the user  and which are given to any variable, any user defined function, any class or any object.
+
+> In order to give any name by the user, they should follow some rules and these rules are known as Rules of Identifiers.
+
+
+Rules of Identifiers
+.......................
+
+1.) Keywords  can't be an identifier.
+2.) We can't use any special symbol (special character) as an identifier, except underscore.
+3.) We can't use number in the beginning of any identifier.
+4.) We can't use empty space in beginning or in between of an identifier.
+5.) We can use any alphabets or any alpha - numeric characters as an identifier.
+
+
+
+
+
+
+
+				Datatypes
+.............................................................
+
+> It is the type of data which is going to be stored inside a variable. ..
+
+
+	Integer (int)
+.......................................
+
+> It is a real number without decimal point.
+> The numbers which can be represented on the number line are known as Integer numbers.
+
+> The range of integer datatype is from -infinity to +infinity.
+
+Syntax : variable = integer_value
+
+type() function : It is an inbuilt function which is used to print the datatype of a particular variable or value.
+
+Syntax : type(variable / value)
+
+isinstance() function : It is an inbuilt function which is used to check whether the particular variable or value belongs to a particular datatype or not.
+
+Syntax : isinstance(variable / value, datatype)
+
+
+bool() function : It is an inbuilt function which is used to check whether the  value is default value or not.
+
+Syntax : bool(variable / value)
+
+Default Value : It is a value which is already predefined value that automatically assigned by the function parameter if no value is provided by the user.
+
+> If value is Default value. then bool() function will give result as False, i.e. internally default value is False.
+
+Non - default value : All values except default value is known as Non - default value.
+
+> If value is Non - default value. then bool() function will give result as True, i.e. internally non default value is True.
+
+> Default value of integer is zero (0).
+> For every datatype, there will be only one default value.
+
+> > For printing the default value of any datatype, we will be suing following syntax :
+
+datatype()
+
+[Note : When the number is in range of -5 to 256, it will be stored in 32 bit configuration. Hence, reference address  will be same for the values and variables.]
+
+[Note : If the number exceeds the range of -5 to 256, it will be stored in 64 bit configuration . Hence , reference address will be different for both variable.]
+
+> When we take same values (exceeds the range of -5 to 256) in same line i.e. MVC, then we will be getting same reference address for both variables and values, because internally same object will be created for it.
+
+> When we take same values (exceeds the range of -5 to 256) in different different lines, then we will be getting different reference address for both variables and values because internally different objects will be created.
+
+
+
+
+		Float (float)
+....................................
+
+> It is a real number with decimal point.
+
+Syntax : variable = float_value
+
+> The range of float datatype is from 
+
+
+
+> The default value of float is "0.0", which can be printed by "float()".
+
+
+
+
+
+			Complex (complex)
+....................................................
+
+> It is a combination of real and imaginary number, where real part is optional , but imaginary part is compulsory to use.
+
+> In python, imaginary number will be the combination of real part and imaginary part.
+
+> In Python, imaginary part will be represented by 'j' or 'J', whose internal value is ....
+
+
+Syntax : variable = complex_value
+
+> Complex number will always be represented in the form  of "a +- bj".
+
+> Complex number will always be represented in the form  of "a +- bj", where 'a' will represent real part and 'bj' will represent imaginary part.
+
+> Default value of complex datatype is '0j', which can be generated by using "complex()".
+
+> Doesn't matter, for creating value of complex datatype, we are using 'j' or 'J', but internally it will be stored in the form of 'j' only.
+
+complex() --> It is an inbuilt function which is used to create a complex number by using real part and imaginary part.
+
+> If we want to access real part or imaginary part separately from a complex number, then we will be using 'real' and 'imag' attribute.
+
+> real attribute : It is an attribute which is used to give real part from complex number in float format.
+
+Syntax : variable.real
+
+> imag attribute : It is an attribute which is used to give imaginary part from complex number in float format.
+
+Syntax : variable.imag
+
+
+
+			Boolean (bool)
+............................................................
+
+> Boolean datatype in Python represents only logical values and it can have only two possible values i.e. True and False.
+
+> It is used to perform logical operations and comparisons and control the flow of program.
+
+> These are the values that may or mayn't be present in real world.
+
+> If it is present, then it will be 'True', otherwise 'False'.
+
+> Hence, boolean datatype has exactly two values i.e. True and False. True and False are also special keywords and they can be assigned as the value for a variable.
+
+> Default Value of boolean datatype is False, which can be generated by using 'bool()'.
+
+
+
+
+
+Multi - value datatypes
+..............................................................
+
+> These are the datatypes which are used to store more than one value in the memory.
+> It is also known as Collection datatypes.
+> They are used to store , manage and modify a group of values, instead of handling each and every value separately.
+> Collection datatypes can store multiple elements of data items like numbers, any string , etc...
+
+> There are mainly 5 types of collection datatypes :
+1. String (str)
+2. List (list)
+3. Tuple (tuple)
+4. Set (set)
+5. Dictionary (dict)
+
+
+
+				String (str)
+........................................................................
+
+> A string is a sequence / group of characters enclosed in single quotes (' ') or in double quotes (" ") or in triple quotes (('''  ''') or ("""  """)).
+
+> String datatype is used to represent textual data and in one or the most common collection datatype, because they stoire multiple values or multiple characters together in a sequence.
+
+> Character can be alphabets, digits or special symbols.
+
+> If the message is passed in any of the quotes, internally it will be stored in the form of single quotes only.
+
+> When user passes  any data in string and if that string is having apostrophe, then data must be passed in double quotes.
+
+> When we want to store multiple lines of data inside the string, then we will be using triple quotes.
+
+
+> len() function : It is an inbuilt function which is used to find the length of a collection or number of values present inside a collection.
+
+Syntax : len(variable / collection)
+
+
+#Assignment for tomorrow
+
+Draw proper memory allocation diagrams for below lists :
+
+(i) a = [1, 2.3, 4+5j. False, 'Python', [1, 2, 3]]
+(ii) a = ['123', 78, 'True', 2+36J, ['hi', [2, 3, 5, 'python'], 9]]
+(iii) a = [[[[12, 35, 'hello'], 'java', True], '1+2j'], 234, '456', [12, [78,	[96]]]] 
+
+
+
+2. Adding new value / values :
+> For adding new value / values in an existing list, we will be using 3 inbuilt functions :
+
+(i) append()
+(ii) extend()
+(iii) insert()
+
+
+(i) append() function : 
+> It is an inbuilt function which is used to add a single value or  element at the end of a list.
+> If you try to add a collection by using append() function, it will create a nested collection.
+
+Syntax : variable.append(value)
+
+
+
+(ii) extend() function :
+> It is an inbuilt function which is used to add multiple elements from a collection (iterable) in the main list at it's end as separate values.
+> If user tries to pass a collection for the same list using append() function, it will create a nested collection.
+> extend() function expands the list by adding multiple elements together in a list at the end.
+
+Syntax : variable.extend(collection)
+
+
+(iii) insert() function :
+> It is an inbuilt function which inserts an element at a specific index position in a list.
+> insert() function takes exactly 2 arguments :
+	(a) index value
+	(b) element
+> It shifts existing elements in the right from the particular specific index position.
+> It doesn't replace elements . It only inserts new elements.
+
+Syntax : variable.insert(index_value, element)
+
+
+
+3. Removing exisiting value :
+> To delete / remove elements from a list, we have 2 inbuilt functions:
+
+(i) pop()
+(ii) remove()
+
+
+(i) pop() : 
+> It is an inbuilt function which is used to remove elements based on specific index position.
+
+> If we pass index value , it will remove element from that particular index position.
+> If we don't pass index value, then by default it will remove the last value.
+
+> It will raise 'IndexError' if the index position is absent / out of range.
+
+> It will return the removed value also.
+
+
+
+#assignment
+
+a = [1, [2, [3, [4, [5, 6], [7, 8], 9], [10, 11]], [12, 13]], [14]], [15, [16, 17], 80] 
+
+a[1][0].pop()
+a[1].pop(0)
+a[1].pop(2)
+a[1][1][1].pop()
+a.pop()
+
+
+
+(ii) remove() function :
+> It is an inbuilt function which is used to  remove a particular value from a collection.
+
+Syntax : variable.remove(value)
+
+> In remove() function, we'll be passing  a particular value which is going to be removed.
+> It doesn't return the removed value like pop(). It simply modies the collection.
+
+> If we are passing repeated values or duplicated values, then it will remove the first occurence of that value.
+> If we are not having specific value in list to remove, then it will raise 'ValueError'.
+> It will take exactly one argument and that argument  will be the value which we are going to remove.
+
+
+
+
+
+
+
+
+
+
+		Tuple (tuple)
+........................................................
+
+> Tuple is a homogeneous and heterogeneous collection of data elements enclosed in open parenthesis i.e. ().
+
+> Tuple is an immutable datatype and it is an ordered collection and each value will be separated by comma.
+
+> In tuple, accessing of values is easy, but modification is not possible.
+
+> Tuple is faster than list in iteration and accessible, because they are immutable and stored in fixed memory blocks.
+
+Syntax :
+variable = (value_1, value_2, ......., value_n)
+		or
+variable = value_1, value_2, ......., value_n
+
+> Tuple is most secured datatype i.e. any kind of modification is not possible in tuple.
+
+> A tuple with one element must be having a comma  at the end, otherwise python will consider as a normal value belong to that particular datatype.
+
+> Due to tuple is immutable, tuples are used only  for secured applications, e.g. Snapchat.
+
+> Default value of tuple is empty tuple i.e. ().
+
+> For accessing a particular value from a tuple, we will be using floowing syntax :
+
+Syntax :
+variable[index_value]
+
+
+Ques. Why tuple is faster than list ?
+Ans.
+Tuples are faster than lists because they are fixed and cannot be changed. Python does not need extra work to add, remove, or modify elements in a tuple. Lists are flexible, so Python keeps extra space and checks for changes, which makes lists slightly slower compared to tuples.
+
+
+
+
+
+
+		Set (set)
+...............................................
+
+> A set in Python is a homogeneous or heterogeneous collection of data items enclosed in curly braces ({}).
+
+> Set is an unordered collection of unique elements i.e. a set must be  having only unique values and duplicated values are not allowed in set.
+
+> If we are passing any duplicated value in set, then duplicated values will be removed automatically.
+
+> As set is unordered , so there will not be having any fixed index position for values. So, set doesn't support for indexing.
+
+Syntax :
+{value_1, value_2, ......., value_n}
+
+> Set is dynamic in size (which can be modified).
+
+> Set is a mutable datatype, but values inside set must be immutable. It means it allows only immutable values to be stored inside it. Mutable values inside set are strictly prohibited to use.
+
+
+Ques. Why set doesn't allow to store mutable values ?
+Ans. 
+> As we know, when it comes to memory allocation of set, values wil;l be stored in hash table, instead of memory layer.
+
+> So, whatever values are stored in hash table, hash table will providehash values for each value stored inside it and we can print the hash values  by using "hash()" inbuilt function.
+
+> But, when it comes to store any mutable value inside hash table, it will not generate hash value for that mutable value, which means hash table will  not accept mutable collections.
+
+> So, that's why we can say set can't allow to store mutable collections inside it.
+
+
+Syntax for hash() function : hash(immutable_value)
+
+> As set is mutable, we do modification inside a set in following way :
+
+1. Adding new value
+2. Removing existing value
+
+
+1. Adding new value :
+> This method is used to add new value inside a set at any random position inside set.
+> In order to add new value inside a set, we will be having an inbuilt function i.e. add() function.
+
+add() function : It is an inbuilt function which is used to add a new value at any random position inside set.
+
+Syntax : variable.add(new_value)
+
+
+2. Removing existing value :
+> This method in set is used to remove existing value from a set.
+> For removing value, we'll be using two inbuilt functions :
+
+(i) remove() function
+(ii) pop() function
+
+
+(i) remove() function :
+> It is an inbuilt function which is used to remove a particular value froma set by using that specific value.
+
+Syntax : variable.remove(value)
+
+(ii) pop() function :
+> It is an inbuilt function which is used to remove any random element from the set.
+> After removing element, it will return the removed element.
+
+Syntax : variable.pop()
+
+> The default value of set is empty set "set()".
+
+
+
+			Dictionary
+................................................
+
+> It is a collection of key and value pairs enclosed in the pair of curly braces i.e. {}, where each key is unique and will keep some specific data.
+
+Syntax : variable = {key_1 : value_1, key_2 : value_2, ......, key_n : value_n}
+
+> Keys must be unique and immutable.
+> Value can be either mutable or immutable.
+> Key - value will be separated by colon , but key value pairs will be separated by comma.
+> Each key value pair will be considered  as length "1".
+> Dictionary is a mutable datatype.
+> Before Python 3.7 version, dictionary was also unordered.
+> We can store dictionary inside a dictionary i.e. nested dictionary, but only on value place, not on kjey place.
+> When it comes to memory allocation of dictionary, it also occurs in hash table, but in different way.
+
+
+
+#assignment :
+
+Draw memory allocation diagram of below dictionary:
+
+a = {35 : (1, 2, [4, 5]), '(2, 3)' : {1, 3, 'hello', ('hi', 'python')}, 
+'xyz' : {1 : 2, 3 : 4, 'name' : 'paras'}}
