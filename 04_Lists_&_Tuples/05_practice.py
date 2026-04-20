@@ -8,7 +8,7 @@ for i in range(0,len(a)+1):
 
 print(a)"""
 
+import keyword
+keyword.kwlist
 a = 10
-print(type(a))
-
-print(isinstance({},dict))
+print(id(a))
