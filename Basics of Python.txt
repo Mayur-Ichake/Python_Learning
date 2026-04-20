@@ -632,3 +632,76 @@ Draw memory allocation diagram of below dictionary:
 
 a = {35 : (1, 2, [4, 5]), '(2, 3)' : {1, 3, 'hello', ('hi', 'python')}, 
 'xyz' : {1 : 2, 3 : 4, 'name' : 'paras'}}
+
+
+> Dictionary won't accept repeated keys. If there is any repeated key, that repeated key will not be taken. For respective unique key, latest / updated value will be taken.
+
+
+Indexing in Dictionary
+.................................
+
+> A numerical indexing is not possible in dictionary, keys itself will work as index values.
+
+Syntax : variable[key]
+
+> It will give the respective value present inside that particular key.
+
+> Default value of dictionary is empty dictionary ({}).
+
+Ques. Why keys in dictionary are immutable always ?
+Ans.
+> This is because python used their fixed values to find out data quickly.
+> If key is immutable, we would loose our data present in dictionary key and by changing key, reference address will also change.
+> That's why keys in dictionary are immutable always.
+
+
+> In dictionary, only keys are visible. Hence, keys must be unique, otheriwse anybody can change it .
+
+> As dictionary is mutable, but keys are immutable.
+
+> As it is mutable, so we :
+
+1. Update existing value.
+2. Add new key value pair.
+3. Remove any existing key value pair.
+
+
+1. Update existing value.:
+> It is used to update any existing value stored inside a key.
+
+Syntax : variable[key] = new_value
+
+2. Add new key value pair :
+> It is used for adding new key value pairs in the dictionary .  
+
+Syntax : variable[new_key] = new_value
+
+> Always use the new key that doesn't exists in dictionary.
+> Size of dictionary will get increased after adding new key value pairs.
+
+
+3. Removing any existing key value pair :
+> It is used to remove existing key value pairs from a dictionary.
+
+Syntax : variable.pop(key)
+
+> It returns the removed value of the respective key stored inside pop() function.
+
+> remove() function is not possible in dictionary, because values can't be directly removed by the user.
+
+
+(i) keys() function :
+> It is an inbuilt function which is used to fetch only keys from the dictionary.
+
+Syntax : variable.keys()
+
+(ii) values() function :
+> It is an inbuilt function which is used to fetch only values from the dictionary.
+
+Syntax : variable.values()
+
+(iii) items() function :
+> It is an inbuilt function which is used to fetch tuple of  keys and values from the dictionary.
+
+Syntax : variable.items()
+
